@@ -1,0 +1,100 @@
+body {
+  background-color: #222831;
+  height: 100vh;
+  margin: 0;
+}
+
+.TodoWrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center; 
+  width: 800px;
+  height: 100%;
+  background-color: #31363F;
+  border-radius: 0px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.TodoForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.TodoForm input {
+  width: 500px;
+  margin: 20px;
+}
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  font-size: 20px;
+  background-color: #76ABAE;
+  color: #fff;
+  padding: .2rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+
+.Todo p.completed {
+  text-decoration: line-through; /* Add line-through decoration for completed tasks */
+  color: #888; /* Change color for completed tasks */
+
+}
+
+.todo-input {
+  padding: 1.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.todo-input::placeholder {
+  font-size: 20px;
+  color: #333;
+}
+
+.todo-btn {
+  background-color: #76ABAE;
+  color: #fff;
+  border: none;
+  padding: 1.55rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0px;
+}
+
+.todo-btn:hover {
+  background-color: #E1F7F5;
+  color: #333;
+}
+
+.icon {
+  justify-content: space-between;
+  margin-left: 15px;
+}
+
+.TodoWrapper h1 {
+  color: #E1F7F5;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+  .TodoWrapper {
+    width: 90%; /* Adjust the width for smaller screens */
+  }
+
+  .TodoForm input {
+    width: 100%; /* Adjust the input width for smaller screens */
+  }
+
+  .Todo {
+    width: 90%; /* Adjust the width for smaller screens */
+  }
+}
